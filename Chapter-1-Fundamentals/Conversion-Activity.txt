@@ -1,0 +1,101 @@
+🧩 Number conversion - Exercises
+
+
+Decimal to Binary:
+* Convert 25 (decimal) to binary.
+25÷2=12 r 1
+12÷2=6 r 0
+6÷2=3 r 0
+3÷2=1 r 1
+1÷2=0 r 1
+11001
+
+* Convert 100 (decimal) to binary.
+100÷2=50 r 0
+50÷2=25 r 0
+25÷2=12 r 1
+12÷2=6 r 0
+6÷2=3 r 0
+3÷2=1 r 1
+1÷2=0 r 1
+1100100
+
+* Convert 47 (decimal) to binary.
+47÷2=23 r 1
+23÷2=11 r 1
+11÷2=5 r 1
+5÷2=2 r 1
+2÷2=1 r 0
+1÷2=0 r 1
+101111
+
+Binary to Decimal:
+* Convert 101101 (binary) to decimal.
+Binary                         	1	0	1	1	0	1
+Position (power)               	2^5	2^4	2^3	2^2	2^1	2^0
+Position (decimal Value)	32	0	8	4	0	1
+32+8+4+1=45
+
+* Convert 1110001 (binary) to decimal.
+Binary                     	1	1	1	0	0	0	1
+Position (power)        	2^6	2^5	2^4	2^3	2^2	2^1	2^0
+Position (decimal Value)	64	32	16	0	0	0	1
+64+32+16+1=113
+
+* Convert 10010 (binary) to decimal.
+Binary                  	1	0	0	1	0
+Position (power)         	2^4	2^3	2^2	2^1	2^0
+Position (decimal Value)	16	0	0	2	0
+16+2=18
+
+Decimal to Hexadecimal:
+* Convert 255 (decimal) to hexadecimal.
+255÷16=15 r 15
+15÷16=0 r 15
+In reverse order 15,15
+Converting = FF
+
+* Convert 64 (decimal) to hexadecimal.
+64÷16=4 r 0
+4÷16=0 r 4
+In reverse order 4,0
+Converting = 40
+
+* Convert 202 (decimal) to hexadecimal.
+202÷16=12 r 10
+12÷16=0 r 12
+In reverse order 12,10
+Converting = CA
+
+Hexadecimal to Decimal:
+* Convert A3 (hex) to decimal.
+Hexadecimal	             A (10)	3
+Position (power)	      16^1	16^0
+Position (decimal Value)	16	1
+Value                  	10*16=160       3*1=3
+160+3=163
+
+Convert 1F (hex) to decimal.
+Hexadecimal	        1	F (15)
+Position (power)       	16^1	16^0
+Position (decimal Value)16	1
+Value                  	1*16=16	15*1=15
+16+15=31
+* Convert C9 (hex) to decimal.
+Hexadecimal        	C (12)         	9
+Position (power)	16^1       	16^0
+Position (decimal Value)16	          1
+Value           	12*16=192	9*1=9
+192+9=201
+Binary to Hexadecimal (and vice versa):
+* Convert 11011110 (binary) to hexadecimal.
+1101 = D, 1110 = E
+Hex = DE
+
+* Convert 7B (hex) to binary.
+Hex Value 7 = 7, B = 11
+Binary = 0111 1011
+
+* Convert 10010110 (binary) to hexadecimal.
+1001 0110
+Hex = 96
