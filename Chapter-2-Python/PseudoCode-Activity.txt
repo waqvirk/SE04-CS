@@ -1,0 +1,57 @@
+🧩Pseudo code
+
+Calculate the Average of a Set of Numbers
+
+1. Start
+2. Input a list of scores
+3. Initialize a variable ’sum_scores’ and set it 0
+4. For each score in the list of scores
+       a. Add score to ’sum_scores’
+5. Initialize a variable ‘avg_score’ and set it ‘sum_scores’ divided by the number of scores in the the list
+6. Output ‘avg_score’
+7. End
+
+
+Determine If a Number Is Prime
+
+1. Start
+2. Take a number input and set it in variable ’N’
+3. If ’N’ ≤ 1
+       a. Output “Not Prime”
+       b. End
+1. For i from 2 to √N         # loop through all integers i starting from 2 up to square root of N
+       a. If ’N’ mod i = 0    # check if N is divisible by i without a remainder 
+       b. Output “Not Prime”
+       c. End
+5. Output “Prime”             # if the loop finishes without finding any divisor
+6. End
+
+
+Simulate a Simple Vending Machine
+
+1. Start
+2. Initialize items with number, name, prices and stock levels (variables, sub-variables)
+      Example:
+             Item 1: Chips         - $2.00 - 5 in Stock
+             Item 2: Soda          - $3.00 - 7 in Stock
+             Item 3: Chocolate     - $2.50 - 4 in Stock
+             Item 1: Hotdog        - $4.00 - 0 in Stock
+3. Display list of items with their prices and stock status
+4. Input user’s item selection  (e.g., item 2)
+5. If selected item is out of stock 
+       a. Output “Sorry, item is out of stock”
+       b. End
+                                # but e.g., item 2 is in stock so
+6. Input amount of money inserted by user (e.g., $3.00)
+7. If inserted amount < item price 
+       a. Output “Insufficient funds. Please Insert more money”
+       b. End
+                                # but e.g., item 2 is actually $3.00 so
+8. Dispense the selected item
+9. Output “Thank You! Dispensing [item name]”
+10. Calculate change = inserted amount - item price
+11. If change > 0
+      a. Output “Returning change: $[change]”
+12. Return the change
+13. Subtract 1 from the stock of the selected item
+14. End
