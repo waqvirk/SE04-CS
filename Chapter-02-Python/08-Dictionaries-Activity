@@ -1,0 +1,79 @@
+print()
+# 1. Create and Print a Dictionary
+person = {
+    "name" : "Alex",
+    "age" : 29,
+    "city" : "Hamburg"
+}
+print("Dictionary representing a person:", person)
+print("\n---\n")
+
+# 2. Access Dictionary Elements
+print("Name from dict (using suqare brackets):", person["name"])
+print("Email which doesn't exist from dict using get ():", person.get("email"))
+print("All keys from dict using keys():", person.keys())
+print("All values from dict using values():", person.values())
+print("All items from dict using items():", person.items())
+print("\n---\n")
+
+# 3. Check for key Existance
+if "age" in person:
+    print("Age key found")
+else:
+    print("Age key not found")
+print("\n---\n")
+
+# 4. Change and Update Dictionary Elements
+person["city"] = "Berlin"
+print("Updating value of city:", person["city"])
+person.update({
+    "age" : 35,
+    "occupation" : "Engineer"})
+print("Updating age and adding occuption while using update():", person)
+print("\n---\n")
+
+# 5. Add New Items to the Dictionary
+person["country"] = "Germany"
+print("Adding country using direct assignment:", person["country"])
+person.update({
+    "hobby" : "Cycling"})
+print("Adding hobby using update():", person)
+print("\n---\n")
+
+# 6. Remove Items from the Dictionary
+removed_value = person.pop("country")
+print("Removed value 'country' using pop():", removed_value)
+print("Printing dictionary after pop():", person)
+last_inserted_key = person.popitem()
+print("Removed last inserted key using popitem():", last_inserted_key)
+print("Printing dictionary after popitem():", person)
+del person["age"]
+print("Deleting key-value 'age' using del:", person)
+print("Printing dictionary after clear():", person.clear())
+print("\n---\n")
+
+# 7. Create & Copy a Dictionary
+alien = {
+    "name" : "Kryptx2",
+    "age" : 235,
+    "planet" : "Xq21",
+    "last seen" : "Mars"
+}
+print("Original dictionary representing a alien:", alien)
+copy_alien = alien.copy()
+print("Copy of dictionary representing a alien:", copy_alien)
+alien["last seen"] = "20 years ago"
+alien.update({"name" : "Unknown", "planet" : "Unknown"})
+print("Orignal dictionary after modification:", alien)
+print("Copy of orignal dictionary beofre without modification:", copy_alien)
+print("\n---\n")
+
+# 8. Using setdefault()
+print("Alien dict:", alien)
+existing_value = alien.setdefault("age", 235)
+print("Value of 'age' that is already existing:", existing_value)
+new_value = alien.setdefault("crime", "stealing military secrets")
+print("Value of 'crime' that is new & non-existing:", new_value)
+print("Updated alien dict after setdefault():", alien)
+
+print("\n---\n")
