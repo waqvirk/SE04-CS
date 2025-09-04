@@ -17,20 +17,30 @@ def two_sum_opt(nums, target):
 # Example 1
 nums = [2,7,11,15]
 target = 9
-
-print("Brute Force Approach O(n²):", two_sum(nums, target))
-print("Optimized Hash Map O(n):", two_sum_opt(nums, target))
-
+print()
+print("Two Sum Example 1:", nums)
+print("Target:", target)
+print("Brute Force Approach O(n²) returning indexes:", two_sum(nums, target))
+print("Optimized Hash Map O(n) returning indexes:", two_sum_opt(nums, target))
+print()
 # Example 2
 nums = [3,2,4]
 target = 6
 
-print("Brute Force Approach O(n²):", two_sum(nums, target))
-print("Optimized Hash Map O(n):", two_sum_opt(nums, target))
+print()
+print("Two Sum Example 2:", nums)
+print("Target:", target)
+print("Brute Force Approach O(n²) returning indexes:", two_sum(nums, target))
+print("Optimized Hash Map O(n) returning indexes:", two_sum_opt(nums, target))
+print()
 
 # Example 3
 nums = [3,3]
 target = 6
 
-print("Brute Force Approach O(n²):", two_sum(nums, target))
-print("Optimized Hash Map O(n):", two_sum_opt(nums, target))
+print()
+print("Two Sum Example 3:", nums)
+print("Target:", target)
+print("Brute Force Approach O(n²) returning indexes:", two_sum(nums, target))
+print("Optimized Hash Map O(n) returning indexes:", two_sum_opt(nums, target))
+print()
