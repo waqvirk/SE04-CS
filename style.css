@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Popular Destinations heading centered & styled */
+#destinations h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin: 10px 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.3px;
+    padding: 0 0.5rem;
+}
+
+/* Decorative underline for the heading */
+#destinations h2::after {
+    content: "";
+    display: block;
+    width: 84px;
+    height: 4px;
+    margin: 10px auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #f39c12, #f1c40f);
+}
+
+#destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Unified card look for each destination */
+#destinations .card,
+#destinations .destination {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(44,62,80,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#destinations img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#destinations ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add margin above the text */
+}
+
+#destinations li {
+    margin: 10px 0; /* Adjust margin for each destination */
+}
+
+/* Form container and layout */
+form,
+.contact-form {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(44,62,80,0.06);
+    display: grid;
+    gap: 12px;
+}
+
+/* Form groups for spacing */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.96rem;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
+    background: #fbfbfb;
+    font-size: 0.95rem;
+    color: #333;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .08s ease;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px; /* Adjust height for single line */
+}
+
+textarea {
+    height: 120px; /* Adjust height for 5 lines */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+    box-shadow: 0 8px 20px rgba(243,156,18,0.12);
+    transform: translateY(-1px);
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background: linear-gradient(90deg, #f39c12, #f1c40f);
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(243,156,18,0.18);
+    opacity: 0.98;
+}
+
+/* Small helpers */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form-row .form-group:last-child {
+    align-self: end;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    #destinations h2 { font-size: 1.4rem; }
+    .form-row { grid-template-columns: 1fr; }
+    form, .contact-form { padding: 16px; }
+}
