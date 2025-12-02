@@ -6,6 +6,11 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.16.1"
+    "@tailwindcss/postcss": "^4.1.17",
+    "parcel": "^2.16.1",
+    "tailwindcss": "^4.1.17"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }
